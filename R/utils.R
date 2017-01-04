@@ -303,7 +303,7 @@ verify_type <- function(trace) {
   # if scatter/scatter3d/scattergl, default to a scatterplot
   if (grepl("scatter", trace$type) && is.null(trace$mode)) {
     message(
-      "No ", trace$type, " mode specifed:\n",
+      "No ", trace$type, " mode specified:\n",
       "  Setting the mode to markers\n",
       "  Read more about this attribute -> https://plot.ly/r/reference/#scatter-mode"
     )
